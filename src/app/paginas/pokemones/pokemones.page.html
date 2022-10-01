@@ -1,0 +1,9 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pokemones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="">
+<app-carta *ngFor="let item of peticion.results" [url]="item.url" ></app-carta> <!--ngFor hará que la carta se repita según pokemones existan-->
+</ion-content>

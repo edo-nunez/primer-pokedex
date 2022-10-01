@@ -1,0 +1,12 @@
+<div class="carta" >
+  <h2>{{pokemon.order}}</h2>
+  <img [src]="pokemon.sprites.front_default" width="580">
+  <h1>{{pokemon.name | uppercase}}</h1>
+  <table>
+    <tr *ngFor="let item of pokemon.stats">
+      <td>{{item.stat.name | uppercase}}:</td><br>
+      <td>{{item.base_stat}}</td>
+    </tr>
+    <pre></pre>
+  </table>
+</div>
